@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <title>المكتبة الكبرى</title>
+</head>
+<body> 
+    <header>
+    <h1>THE LIBRARY<br>
+    المكتبة الكبرى</h1>
+</header>
+<section id="forms">
+    <h3>EMPLOYEE INTERFACE</h3>
+    
+        <form action="input" id="libraryform">
+            <h1 class="FORMTITLE">TITLE  OF THE BOOK</h1><br> 
+            <input type="text" id="title" placeholder="TITLE OF THE BOOK"><br> 
+            <h1 class="FORMTITLE">AUTHOR</h1><br> 
+            <input type="text" id="author"><br> 
+            <h1 class="FORMTITLE">Price</h1><br> 
+            <input type="number" id="price"><br> 
+            <h1 class="FORMTITLE">PUBLICATION YEAR</h1><br> 
+            <input type="date" id="pub"><br> 
+            <h1 class="FORMTITLE">LANGUAGE</h1><br> 
+            <input type="text" id="lang"><br> 
+            <h1 class="FORMTITLE">TYPE</h1> <br>
+           
+        
+        <div id="typeinput" style="display: flex;flex-direction: row; width:30%; height: 40px;">
+          <input  class="type"type="radio" name="Selectionner" value="Roman" >
+          <label  for="Roman">Roman</label><br>
+          <input  class="type" type="radio"  name="Selectionner" value="Essai">
+          <label  for="Essai">Essai</label><br>
+          <input class="type" type="radio"  name="Selectionner" value="Bande-Dessinée">
+          <label for="Bande-Dessinée">Bande-Dessinée</label>
+       </div>
+       
+        </form>
+        <div id="prbtn">
+        <button  id="btn" type="submit" onclick ="createrow()" >add Book</button>
+    </div>
+    </section>
+    <section id="table">
+        <br> <br> <br> <br> <br>
+        <table id="tableau">
+       
+      <tr>
+      <th>TITLE  OF THE BOOK</th>
+      <th> AUTHOR</th>
+      <th>PRICE </th>
+      <th> PUBLICATION YEAR</th>
+      <th>LANGUAGE</th>
+      <th> TYPE</th>
+      <th>modify or delete</th>
+      </tr>
+      <tbody id="add">
+        
+          
+      </tbody>
+      </table>
+     
+    </section>
+    <footer>
+        <h1>the library<br>
+            المكتبة الكبرى</h1>
+            <h3>EMPLOYEE INTERFACE</h3>
+    </footer>
+   <script src="main.js"></script>
+    
+      
+
+   
+            
+
+</body>
+</html>
